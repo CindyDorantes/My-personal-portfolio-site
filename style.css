@@ -46,7 +46,7 @@ p {
   padding-top: 20px;
 }
 
-nav li {
+li {
   display: inline;
   list-style-type: none;
   padding: 7px;
