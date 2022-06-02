@@ -36,7 +36,7 @@ h1 {
   margin: 26px;
 }
 
-h2 {
+p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -59,6 +59,7 @@ ul {
 
 .greenheader {
   color: #36b37e;
+  text-align: center;
 }
 
 .logo {
