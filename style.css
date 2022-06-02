@@ -1,71 +1,76 @@
-body{
-    font-family: Inter;
-    color: #28352F;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-  }
-  
-  header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-  }
-  
-  hgroup {
-      background-image: url("./Images/header-illustration-mobile.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
-      padding-top: 60px;
-      padding-bottom: 60px;
-  }
-  
-  h1 {    
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-    color: #172B4D;
-    margin: 26px;
-  }
-  
-  h2 {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #172B4D;
-    padding: 20px;
-    padding-top: 20px;
-  }
-  
-  nav li {
-    display: inline;  
-    list-style-type: none;
-    padding: 7px;
-  }
-  
-  ul {
-    padding: 0px;
-    text-align: center;
-  }
-  
-  .greenheader {
-      color: #36B37E;
-  }
-  
-  .welcome {
-    text-align: left;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-  }
-  
-  .hamburguer {
-    width: 18px;
-    height: 12px;
-    left: 3px;
-    top: 6px;  
-  }
-  
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #28352f;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.headline {
+  background-image: url("./Images/header-illustration-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 26px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  padding: 7px;
+}
+
+ul {
+  padding: 0;
+  text-align: center;
+}
+
+.greenheader {
+  color: #36b37e;
+}
+
+.welcome {
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.hamburguer {
+  width: 18px;
+  height: 12px;
+  left: 3px;
+  top: 6px;
+}
