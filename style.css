@@ -24,7 +24,7 @@ header {
   background-position: center;
   background-size: 100%;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 60px; 
 }
 
 h1 {
@@ -36,6 +36,15 @@ h1 {
   margin: 26px;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 26px;
+  width: 327px;
+}
 p {
   font-weight: 400;
   font-size: 20px;
@@ -74,4 +83,9 @@ ul {
   height: 12px;
   left: 3px;
   top: 6px;
+}
+
+.works {
+  display: flex;
+  justify-content: center;
 }
