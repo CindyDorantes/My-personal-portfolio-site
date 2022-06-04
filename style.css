@@ -44,8 +44,6 @@ h2 {
   text-align: center;
   color: #172b4d;
   margin: 26px;
-
-  /* width: 327px; */
 }
 
 p {
@@ -89,28 +87,12 @@ ul {
 }
 
 .works {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   text-align: center;
   display: grid;
   grid-template-rows: repeat(6, auto);
   align-content: center;
   row-gap: 20px;
 }
-
-/* .work-item {
-  width: 327px;
-  height: 474px;
-  border-radius: 8px;
-  background-color: #ebf0ee;
-  border: 1px solid #d0d9d4;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: grid;
-  grid-template-rows: 252px 222px;
-} */
 
 .works-heading {
   grid-row: 1 / 2;
@@ -199,7 +181,7 @@ ul {
 
 .work-title {
   width: auto;
-  margin: 0;
+  margin: 0px;
   font-weight: 600;
   font-size: 24px;
   color: #3a4a42;
@@ -274,9 +256,8 @@ ul {
 }
 
 .resume-button {
-  /* width: 135px; */
   height: 48px;
-  border: none;
+  border: none; 
   border-radius: 4px;
   padding: 12px;
   padding-top: 7px;
@@ -370,9 +351,6 @@ ul {
 
 .framework-cards {
   margin: 0;
-
-  /*  margin-left: 12px;
-  margin-right: 12px; */
   padding: 0;
   grid-row: 6 / 7;
   width: 327px;
