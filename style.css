@@ -208,11 +208,16 @@ ul {
 }
 
 .see-project {
-  width: 98px;
-  height: 24px;
+  height: 48px;
+  border: none; 
   border-radius: 4px;
   padding: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   background-color: #36b37f;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
   font-weight: 500;
   font-size: 17px;
   color: #fff;
