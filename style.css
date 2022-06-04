@@ -87,11 +87,10 @@ ul {
 }
 
 .works {
-  text-align: center;
   display: grid;
   grid-template-rows: repeat(6, auto);
-  align-content: center;
   row-gap: 20px;
+  justify-items: center;
 }
 
 .works-heading {
