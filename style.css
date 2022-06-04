@@ -10,6 +10,7 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
+  text-align: center;
 }
 
 header {
@@ -43,7 +44,8 @@ h2 {
   text-align: center;
   color: #172b4d;
   margin: 26px;
-  width: 327px;
+
+  /* width: 327px; */
 }
 
 p {
@@ -87,13 +89,18 @@ ul {
 }
 
 .works {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  align-content: center;
+  row-gap: 20px;
 }
 
-.work-item {
+/* .work-item {
   width: 327px;
   height: 474px;
   border-radius: 8px;
@@ -103,6 +110,80 @@ ul {
   margin-bottom: 10px;
   display: grid;
   grid-template-rows: 252px 222px;
+} */
+
+.works-heading {
+  grid-row: 1 / 2;
+}
+
+.work-item01 {
+  width: 327px;
+  height: 474px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  margin-left: 34.5px;
+  margin-right: 34.5px;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-item02 {
+  width: 327px;
+  height: 474px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  margin-left: 34.5px;
+  margin-right: 34.5px;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-item03 {
+  width: 327px;
+  height: 474px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  margin-left: 34.5px;
+  margin-right: 34.5px;
+  grid-row: 4 / 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-item04 {
+  width: 327px;
+  height: 474px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  margin-left: 34.5px;
+  margin-right: 34.5px;
+  grid-row: 5 / 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-item05 {
+  width: 327px;
+  height: 474px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  margin-left: 34.5px;
+  margin-right: 34.5px;
+  grid-row: 6 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-content {
@@ -164,7 +245,7 @@ ul {
   align-items: center;
 }
 
-/* I was trying to add the background image */
+/* To add the background images */
 .bg-1 {
   height: 127px;
   width: 396px;
