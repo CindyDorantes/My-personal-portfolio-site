@@ -24,7 +24,7 @@ header {
   background-position: center;
   background-size: 100%;
   padding-top: 60px;
-  padding-bottom: 60px; 
+  padding-bottom: 60px;
 }
 
 h1 {
@@ -45,6 +45,7 @@ h2 {
   margin: 26px;
   width: 327px;
 }
+
 p {
   font-weight: 400;
   font-size: 20px;
@@ -91,11 +92,12 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.work-item{
+
+.work-item {
   width: 327px;
   height: 474px;
   border-radius: 8px;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -107,7 +109,7 @@ ul {
   width: 295px;
   padding: 16px;
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: #fff;
   display: grid;
   gap: 16px;
   grid-template-rows: 57px 32px 69px;
@@ -118,7 +120,7 @@ ul {
   width: 327px;
   font-weight: 600;
   font-size: 24px;
-  color:#3A4A42;
+  color: #3a4a42;
   text-align: center;
   grid-row: 1 / 2;
 }
@@ -126,7 +128,7 @@ ul {
 .cards {
   width: 305px;
   height: 32px;
-  margin: 0px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -134,12 +136,12 @@ ul {
 }
 
 .cards li {
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   border-radius: 4px;
   font-weight: 600;
   font-size: 12px;
-  color: #3A4A42;
-  padding: 8px, 12px, 8px, 12px
+  color: #3a4a42;
+  padding: 8px, 12px, 8px, 12px;
 }
 
 .see-project {
@@ -150,7 +152,7 @@ ul {
   background-color: #36b37f;
   font-weight: 500;
   font-size: 17px;
-  color: #ffffff;
+  color: #fff;
   margin-left: 86.5px;
   margin-right: 86.5px;
   grid-row: 3 / 4;
@@ -170,11 +172,11 @@ ul {
   background-repeat: no-repeat;
   background-position: 100% 0%;
   display: flex;
-  justify-content: center;   
+  justify-content: center;
 }
 
 .aboutme-heading {
-  margin: 0px;
+  margin: 0;
   margin-top: 60px;
   width: 370px;
 }
@@ -199,15 +201,15 @@ ul {
   text-align: center;
   font-weight: 500;
   font-size: 17px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .languages {
   display: grid;
   grid-template-rows: 16px 128px 40px 32px 24px 40px 64px;
   border-radius: 8px;
-  background-color: #EBF0EE;
-  border: 1px solid #C1C7D0;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
   width: 327px;
   height: 352px;
   margin-top: 10px;
@@ -215,14 +217,14 @@ ul {
 }
 
 .language-icon {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   grid-row: 2 / 3;
 }
 
 .languages-title {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   grid-row: 4 / 5;
   font-weight: 600;
   font-size: 24px;
@@ -231,10 +233,10 @@ ul {
 }
 
 .languages-cards {
-  margin: 0px;
+  margin: 0;
   margin-left: 28px;
   margin-right: 28px;
-  padding: 0px;
+  padding: 0;
   grid-row: 6 / 7;
   width: 271px;
   height: 32px;
@@ -244,11 +246,11 @@ ul {
 }
 
 .languages-cards li {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 4px;
   font-weight: 600;
   font-size: 12px;
-  color: #36B37E;
+  color: #36b37e;
   padding: 12px;
 }
 
@@ -256,8 +258,8 @@ ul {
   display: grid;
   grid-template-rows: 16px 128px 40px 32px 24px 80px 24px;
   border-radius: 8px;
-  background-color: #EBF0EE;
-  border: 1px solid #C1C7D0;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
   width: 327px;
   height: 352px;
   margin-top: 10px;
@@ -265,14 +267,14 @@ ul {
 }
 
 .framework-icon {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   grid-row: 2 / 3;
 }
 
 .framework-title {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   grid-row: 4 / 5;
   font-weight: 600;
   font-size: 24px;
@@ -281,10 +283,11 @@ ul {
 }
 
 .framework-cards {
-  margin: 0px;
-/*  margin-left: 12px;
-  margin-right: 12px;*/
-  padding: 0px;
+  margin: 0;
+
+  /*  margin-left: 12px;
+  margin-right: 12px; */
+  padding: 0;
   grid-row: 6 / 7;
   width: 327px;
   height: 88px;
@@ -295,13 +298,12 @@ ul {
 }
 
 .framework-cards li {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 8px;
   font-weight: 600;
   font-size: 12px;
-  color: #36B37E;
+  color: #36b37e;
   padding: 12px;
   height: 15px;
   margin: 4px;
 }
-  
