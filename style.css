@@ -155,3 +155,153 @@ ul {
   margin-right: 86.5px;
   grid-row: 3 / 4;
 }
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* I was trying to add the background image */
+.bg-1 {
+  height: 127px;
+  width: 396px;
+  background-image: url("./Images/aboutme_frame02.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  display: flex;
+  justify-content: center;   
+}
+
+.aboutme-heading {
+  margin: 0px;
+  margin-top: 60px;
+  width: 370px;
+}
+
+.bg-2 {
+  height: 65px;
+  width: 396px;
+  background-image: url("./Images/aboutme_frame01.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-button {
+  width: 135px;
+  height: 24px;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: #36b37f;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.languages {
+  display: grid;
+  grid-template-rows: 16px 128px 40px 32px 24px 40px 64px;
+  border-radius: 8px;
+  background-color: #EBF0EE;
+  border: 1px solid #C1C7D0;
+  width: 327px;
+  height: 352px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.language-icon {
+  margin: 0px;
+  padding: 0px;
+  grid-row: 2 / 3;
+}
+
+.languages-title {
+  margin: 0px;
+  padding: 0px;
+  grid-row: 4 / 5;
+  font-weight: 600;
+  font-size: 24px;
+  color: #344563;
+  text-align: center;
+}
+
+.languages-cards {
+  margin: 0px;
+  margin-left: 28px;
+  margin-right: 28px;
+  padding: 0px;
+  grid-row: 6 / 7;
+  width: 271px;
+  height: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.languages-cards li {
+  background-color: #ffffff;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #36B37E;
+  padding: 12px;
+}
+
+.frameworks {
+  display: grid;
+  grid-template-rows: 16px 128px 40px 32px 24px 80px 24px;
+  border-radius: 8px;
+  background-color: #EBF0EE;
+  border: 1px solid #C1C7D0;
+  width: 327px;
+  height: 352px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.framework-icon {
+  margin: 0px;
+  padding: 0px;
+  grid-row: 2 / 3;
+}
+
+.framework-title {
+  margin: 0px;
+  padding: 0px;
+  grid-row: 4 / 5;
+  font-weight: 600;
+  font-size: 24px;
+  color: #344563;
+  text-align: center;
+}
+
+.framework-cards {
+  margin: 0px;
+/*  margin-left: 12px;
+  margin-right: 12px;*/
+  padding: 0px;
+  grid-row: 6 / 7;
+  width: 327px;
+  height: 88px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.framework-cards li {
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #36B37E;
+  padding: 12px;
+  height: 15px;
+  margin: 4px;
+}
+  
