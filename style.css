@@ -188,6 +188,7 @@ ul {
   grid-row: 1 / 2;
 }
 
+/*
 .cards {
   width: 305px;
   height: 32px;
@@ -196,6 +197,15 @@ ul {
   justify-content: space-between;
   align-items: stretch;
   grid-row: 2 / 3;
+}*/
+
+
+.cards {
+  width: 305px;
+  height: 32px;
+  margin: 0;
+  grid-row: 2 / 3;
+  float: none;
 }
 
 .cards li {
