@@ -206,6 +206,7 @@ ul {
   margin: 0;
   grid-row: 2 / 3;
   float: none;
+  position: absolute;
 }
 
 .cards li {
