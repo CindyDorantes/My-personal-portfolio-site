@@ -389,3 +389,39 @@ button:active {
   height: 15px;
   margin: 4px;
 }
+
+.contact-form {  
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-items {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+  
+}
+
+.ul-form {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.input-name {
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+  padding: 2%;
+  width: 90%;
+  color: #6B778C;
+}
+
+
+
