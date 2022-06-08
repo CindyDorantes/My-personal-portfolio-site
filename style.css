@@ -1,9 +1,4 @@
 
-@font-face {
-  font-family: "Inter";
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
-}
-
 body {
   font-family: 'Inter', sans-serif;
   color: #28352f;
@@ -90,81 +85,75 @@ ul {
   display: grid;
   grid-template-rows: repeat(6, auto);
   row-gap: 20px;
-  justify-items: center;
 }
 
 .works-heading {
   grid-row: 1 / 2;
 }
 
-.work-item01 {
-  width: 327px;
+.wi01 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-row: 2 / 3;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
-.work-item02 {
-  width: 327px;
+.wi02 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-row: 3 / 4;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
-.work-item03 {
-  width: 327px;
+.wi03 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-row: 4 / 5;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
-.work-item04 {
-  width: 327px;
+.wi04 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-row: 5 / 6;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
-.work-item05 {
-  width: 327px;
+.wi05 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
-  grid-row: 6 / 7;
+  justify-self: center;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  grid-row: 6 / 7;
 }
 
 .work-content {
@@ -388,4 +377,98 @@ button:active {
   padding: 12px;
   height: 15px;
   margin: 4px;
+}
+
+.contact-form {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("./Images/footer-frame.png");
+  background-repeat: no-repeat;
+  background-position: bottom 28% right;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+}
+
+.ul-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.input-name,
+.input-email {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 15px;
+  width: 90%;
+  color: #6b778c;
+}
+
+.input-comment {
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  width: 91.5%;
+  height: 15vh;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  text-align: left;
+}
+
+.get-in-touch {
+  height: 48px;
+  width: 129px;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: #36b37f;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  margin-left: 86.5px;
+  margin-right: 86.5px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.footer-icons {
+  margin: 0%;
+}
+
+.footer-email {
+  color: #42526e;
+  margin-top: 0%;
+  margin-bottom: 50%;
+}
+
+.footer-line {
+  width: 40%;
+  height: 0.5vh;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 4px;
+  margin-bottom: 2%;
 }

@@ -7,10 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <!-- To embed a font -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-    </style>
-    <!-- Font 'Inter' embeded-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <!-- Font 'Inter' embeded -->
 </head>
 <body>
     <header class="toolbar">
@@ -43,10 +42,10 @@
     <!--here begins the 'Works' section-->
     <section class="works">
         <h2 class="works-heading">My recent Works <br><img src="./Images/Indicator.png" alt="green line divisor"></h2>
-        <span><img src="./Images/Indicator.png" alt="green line divisor"></span>
+        
         
         <!--First work-item-->
-        <div class="work-item01">
+        <div class="wi-01">
             <div class="work-image"></div>
             <div class="work-content">
                 <h3 class="work-title">Multi-Post Stories Gain+Glory</h3>
@@ -60,7 +59,7 @@
             </div>
         </div>
         <!--Second work item-->
-        <div class="work-item02">
+        <div class="wi-02">
             <div class="work-image"></div>
             <div class="work-content">
                 <h3 class="work-title">Multi-Post Stories Gain+Glory</h3>
@@ -74,7 +73,7 @@
             </div>
         </div>
         <!--3rd work item-->
-        <div class="work-item03">
+        <div class="wi-03">
             <div class="work-image"></div>
             <div class="work-content">
                 <h3 class="work-title">Multi-Post Stories Gain+Glory</h3>
@@ -88,7 +87,7 @@
             </div>
         </div>
         <!--4th work item-->
-        <div class="work-item04">
+        <div class="wi-04">
             <div class="work-image"></div>
             <div class="work-content">
                 <h3 class="work-title">Multi-Post Stories Gain+Glory</h3>
@@ -102,7 +101,7 @@
             </div>
         </div>
         <!--5th work item-->
-        <div class="work-item05">
+        <div class="wi-05">
             <div class="work-image"></div>
             <div class="work-content">
                 <h3 class="work-title">Multi-Post Stories Gain+Glory</h3>
@@ -169,6 +168,36 @@
         </div>
         <!--Skills square finishes-->
     </section>
-
+    <!--About Me section finishes-->
+    <!--Contact form section starts-->
+    <section class="contact-form">
+        <h2 class="=contact-header">I'm always interested in hearing about new projects, 
+            so if you'd like to chat please get in touch.</h2>
+        <form class="form-items" action="https://formspree.io/f/mnqwrdak" method="post">
+            <ul class="ul-form">
+                <li>
+                    <input class="input-name" type="text" placeholder="Full name" minlength="2" maxlength="30" required id="input-name" name="user-name">
+                </li>
+                <li>
+                    <input class="input-email" type="email" placeholder="Email address" required id="input-email" name="user-email">
+                </li>
+                <li>
+                    <textarea class="input-comment" maxlength="500" required id="input-comment" name="user-comment">Enter text here</textarea>
+                </li>
+            </ul>
+            <button type="submit" class="get-in-touch">Get in touch</button>
+        </form>
+        <div class="footer">
+            <ul class="footer-icons">
+                <li><a href="https://twitter.com/CindyDorantes10"><img src="./Images/twitter.png" alt="Twitter icon" class="socialicon"></a></li>
+                <li><a href="https://www.linkedin.com/in/cindydorantessanchez/"><img src="./Images/Linkedin_icon.png" alt="LinkedIn icon" class="socialicon"></a></li>
+                <li><a href="https://medium.com/"><img src="./Images/medium.png" alt="Medium icon" class="socialicon"></a></li>
+                <li><a href="https://github.com/CindyDorantes"><img src="./Images/github.png" alt="GitHub icon" class="socialicon"></a></li>
+                <li><a href="https://angel.co/"><img src="./Images/angellist.png" alt="AngelList icon" class="socialicon"></a></li>
+            </ul>
+            <p class="footer-email">cindym.dorantes@gmail.com</p>
+            <div class="footer-line"></div>
+        </div>
+    </section>
 </body>
 </html>
