@@ -1,9 +1,4 @@
 
-@font-face {
-  font-family: "Inter";
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
-}
-
 body {
   font-family: 'Inter', sans-serif;
   color: #28352f;
@@ -390,10 +385,13 @@ button:active {
   margin: 4px;
 }
 
-.contact-form {  
+.contact-form {
   display: flexbox;
   flex-direction: column;
   justify-content: center;
+  background-image: url("./Images/footer-frame.png");
+  background-repeat: no-repeat;
+  background-position: bottom 28% right;
 }
 
 .form-items {
@@ -401,7 +399,6 @@ button:active {
   flex-direction: column;
   justify-content: center;
   margin: 5%;
-  
 }
 
 .ul-form {
@@ -413,35 +410,36 @@ button:active {
   font-weight: 400;
 }
 
-.input-name, .input-email {
-  border: 1px solid #D0D9D4;
+.input-name,
+.input-email {
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
-  padding: 2%;
+  padding: 15px;
   width: 90%;
-  color: #6B778C;
+  color: #6b778c;
 }
 
 .input-comment {
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   border-radius: 4px;
-  width: 90%;
+  width: 91.5%;
   height: 15vh;
-  font-family: 'Inter';
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
   text-align: left;
 }
 
 .get-in-touch {
   height: 48px;
+  width: 129px;
   border: none;
   border-radius: 4px;
   padding: 12px;
-  padding-top: 7px;
-  padding-bottom: 7px;
   background-color: #36b37f;
   display: inline-block;
   text-align: center;
@@ -452,4 +450,31 @@ button:active {
   margin-left: 86.5px;
   margin-right: 86.5px;
   cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.footer-icons {
+  margin: 0%;
+}
+
+.footer-email {
+  color: #42526e;
+  margin-top: 0%;
+  margin-bottom: 50%;
+}
+
+.footer-line {
+  width: 40%;
+  height: 0.5vh;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 4px;
+  margin-bottom: 2%;
 }
