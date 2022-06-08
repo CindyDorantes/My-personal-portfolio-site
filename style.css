@@ -397,7 +397,6 @@ button:active {
 }
 
 .form-items {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -406,7 +405,6 @@ button:active {
 }
 
 .ul-form {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -415,7 +413,7 @@ button:active {
   font-weight: 400;
 }
 
-.input-name {
+.input-name, .input-email {
   border: 1px solid #D0D9D4;
   border-radius: 4px;
   padding: 2%;
@@ -423,5 +421,35 @@ button:active {
   color: #6B778C;
 }
 
+.input-comment {
+  border: 1px solid #60C095;
+  border-radius: 4px;
+  width: 90%;
+  height: 15vh;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091E42;
+  text-align: left;
+}
 
-
+.get-in-touch {
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #36b37f;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  margin-left: 86.5px;
+  margin-right: 86.5px;
+  cursor: pointer;
+}
