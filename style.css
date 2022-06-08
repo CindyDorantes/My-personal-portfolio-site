@@ -85,81 +85,75 @@ ul {
   display: grid;
   grid-template-rows: repeat(6, auto);
   row-gap: 20px;
-  justify-items: center;
 }
 
 .works-heading {
   grid-row: 1 / 2;
 }
 
-.work-item01 {
-  width: 327px;
+.wi01 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-row: 2 / 3;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
-.work-item02 {
-  width: 327px;
+.wi02 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-row: 3 / 4;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
-.work-item03 {
-  width: 327px;
+.wi03 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-row: 4 / 5;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
-.work-item04 {
-  width: 327px;
+.wi04 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-row: 5 / 6;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
-.work-item05 {
-  width: 327px;
+.wi05 {
+  max-width: 369px;
   height: 474px;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 34.5px;
-  margin-right: 34.5px;
-  grid-row: 6 / 7;
+  justify-self: center;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  grid-row: 6 / 7;
 }
 
 .work-content {
