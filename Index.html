@@ -17,11 +17,7 @@
         <nav class="hamburguer"><img src="./Images/Union.png" alt="hamburguer menu"></nav>        
     </header>
     <section class="headline">
-        <nav class="menu">
-            <a class="menu-item">Portfolio</a>
-            <a class="menu-item">About</a>
-            <a class="menu-item">Contact</a>
-        </nav>
+        
         <br class="hb-01">
         <h1>
             Hey there. I'm Cindy
@@ -45,7 +41,7 @@
     </section>        
     <!--here begins the 'Works' section-->
     <section class="works">
-        <h2 class="works-heading">My recent Works <br><img src="./Images/Indicator.png" alt="green line divisor"></h2>        
+        <h2 class="works-heading">My Recent Works <br><img src="./Images/Indicator.png" alt="green line divisor"></h2>        
         <!--First work-item-->
         <div class="work-item wi-01">
             <div class="work-image"></div>
@@ -189,22 +185,24 @@
     <!--About Me section finishes-->
     <!--Contact form section starts-->
     <section class="contact-form">
-        <h2 class="=contact-header">I'm always interested in hearing about new projects, 
-            so if you'd like to chat please get in touch.</h2>
-        <form class="form-items" action="https://formspree.io/f/mnqwrdak" method="post">
-            <ul class="ul-form">
-                <li>
-                    <input class="input-name" type="text" placeholder="Full name" minlength="2" maxlength="30" required id="input-name" name="user-name">
-                </li>
-                <li>
-                    <input class="input-email" type="email" placeholder="Email address" required id="input-email" name="user-email">
-                </li>
-                <li>
-                    <textarea class="input-comment" maxlength="500" required id="input-comment" name="user-comment">Enter text here</textarea>
-                </li>
-            </ul>
-            <button type="submit" class="get-in-touch">Get in touch</button>
-        </form>
+        <div class="contact-grid">
+            <h2 class="contact-header">I'm always interested in hearing about new projects, 
+                so if you'd like to chat please get in touch.</h2>
+            <form class="form-items" action="https://formspree.io/f/mnqwrdak" method="post">
+                <ul class="ul-form">
+                    <li>
+                        <input class="input-name" type="text" placeholder="Full name" minlength="2" maxlength="30" required id="input-name" name="user-name">
+                    </li>
+                    <li>
+                        <input class="input-email" type="email" placeholder="Email address" required id="input-email" name="user-email">
+                    </li>
+                    <li>
+                        <textarea class="input-comment" maxlength="500" required id="input-comment" name="user-comment">Enter text here</textarea>
+                    </li>
+                </ul>
+                <button type="submit" class="get-in-touch">Get in touch</button>
+            </form>
+        </div>
         <div class="footer">
             <ul class="footer-icons">
                 <li><a href="https://twitter.com/CindyDorantes10"><img src="./Images/twitter.png" alt="Twitter icon" class="socialicon"></a></li>

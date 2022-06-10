@@ -113,7 +113,7 @@ ul {
   align-items: flex-end;
 }
 
-.wi-01 {  
+.wi-01 {
   grid-row: 2 / 3;
 }
 
@@ -379,6 +379,12 @@ button:active {
   background-position: bottom 28% right;
 }
 
+.contact-grid {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .form-items {
   display: flex;
   flex-direction: column;
@@ -426,15 +432,12 @@ button:active {
   border-radius: 4px;
   padding: 12px;
   background-color: #36b37f;
-  display: inline-block;
-  text-align: center;
   text-decoration: none;
   font-weight: 500;
   font-size: 17px;
   color: #fff;
-  margin-left: 86.5px;
-  margin-right: 86.5px;
   cursor: pointer;
+  align-self: center;
 }
 
 .footer {
@@ -470,14 +473,14 @@ button:active {
   /*
   * {
     outline: solid 1px red;
-  }*/
-  
-  /* Desktop alignment for headline section*/
+  } */
+
+  /* Desktop alignment for headline section */
   .logo,
   .hamburguer {
     display: none;
   }
-  
+
   .headline {
     background-image: url("./Images/Header-llustration-desktop.png");
     background-repeat: no-repeat;
@@ -487,7 +490,6 @@ button:active {
     padding-left: 18%;
     padding-right: 18%;
   }
-  
 
   .menu {
     display: flex;
@@ -521,11 +523,11 @@ button:active {
     margin-bottom: 0%;
   }
 
-  /* Desktop alignment for works section*/
+  /* Desktop alignment for works section */
   .works {
-    grid-template-columns: repeat( 3 , 1fr );
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 13% 474px 474px;
-    gap: 2% 2%;
+    gap: 4% 2%;
     margin: 8%;
     width: auto;
   }
@@ -565,10 +567,10 @@ button:active {
     grid-area: 3 / 3 / 4 / 4;
   }
 
-  /* Desktop alignment for aboutme section*/
+  /* Desktop alignment for aboutme section */
   .aboutme {
     display: grid;
-    grid-template-columns: repeat( 3 , 1fr );
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px 474px;
     gap: 2% 2%;
     padding: 5.5% 9.3% 5.5% 9.3%;
@@ -625,4 +627,52 @@ button:active {
     justify-self: center;
   }
 
+  /* Desktop alignment for contact form section */
+  .contact-grid {
+    display: grid;
+    grid-template: auto / 40% 60%;
+    padding: 5.5% 9.3% 15.5% 9.3%;
+    background-image:
+      url("./Images/contact_frame_desktop01.png"),
+      url("./Images/contact_frame_desktop02.png"),
+      url("./Images/contact_frame_desktop03.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left bottom, 22% 80%, right bottom;
+    background-size: 13%, 9%, 13%;
+  }
+
+  .contact-header {
+    font-size: 30px;
+  }
+
+  .form-items {
+    grid-column: 2 / 3;
+    grid-row: 1 / span 3;
+    margin: 0%;
+    width: 100%;
+    justify-self: left;
+    align-self: flex-start;
+  }
+
+  li .input-name,
+  li .input-email,
+  li .input-comment {
+    width: 98%;
+  }
+
+  .get-in-touch {
+    align-self: flex-start;
+    margin-left: 7px;
+  }
+
+  .footer {
+    margin: 0%;
+    border-top: 1px solid #dfe1e6;
+    padding: 2%;
+  }
+
+  .footer-email,
+  .footer-line {
+    display: none;
+  }
 }
