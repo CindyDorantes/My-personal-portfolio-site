@@ -675,4 +675,15 @@ button:active {
   .footer-line {
     display: none;
   }
+
+  .arrow-movement {
+    animation-name: arrow-movement;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+  }
+
+  @keyframes arrow-movement {
+    
+  }
 }
