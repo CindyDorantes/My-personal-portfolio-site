@@ -684,6 +684,14 @@ button:active {
   }
 
   @keyframes arrow-movement {
-    
+    from {
+      padding-top: 20px;
+      
+    }
+  
+    to {
+      padding-top: 100%;
+      
+    }
   }
 }
