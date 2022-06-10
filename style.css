@@ -485,10 +485,9 @@ button:active {
     background-image: url("./Images/Header-llustration-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
-    padding-top: 0%;
-    padding-left: 18%;
-    padding-right: 18%;
+    background-size: cover;
+    padding: 0% 18% 20% 18%;
+    margin-bottom: 10%;
   }
 
   .menu {
@@ -508,7 +507,7 @@ button:active {
 
   .hb-01 {
     display: block;
-    margin: 7.5%;
+    margin: 3%;
   }
 
   h1,
@@ -571,9 +570,10 @@ button:active {
   .aboutme {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px 474px;
+    grid-template-rows: 250px 352px;
     gap: 2% 2%;
     padding: 5.5% 9.3% 5.5% 9.3%;
+    margin-top: 3%;
     width: auto;
     background-image: url("./Images/aboutme_frame_desktop01.png"), url("./Images/aboutme_frame_desktop02.png");
     background-repeat: no-repeat, no-repeat;
