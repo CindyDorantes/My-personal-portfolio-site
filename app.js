@@ -68,3 +68,13 @@ seeProject.classList.add("see-project");
 seeProject.type = "button";
 seeProject.textContent = "See project";
 div03.appendChild(seeProject);
+
+// Create the array //
+
+const projects = [
+  {
+    title: 'Multi-post stories gain + glory',
+    languages: ['Ruby on rails ', 'css', 'javscript', 'html' ],
+    buttonName: 'see project',
+  }
+]
