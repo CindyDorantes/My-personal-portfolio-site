@@ -8,6 +8,49 @@ body {
   text-align: center;
 }
 
+/* begin of the hamburguer menu */
+
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 7.5%;
+  padding-top: 15%;
+  top: 0%;
+  left: -120%;
+  color: #3a4a42;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 9%;
+  line-height: 44px;
+}
+
+.mobile-menu.active {
+  left: 0%;
+}
+
+.close {
+  text-align: end;
+  color: #67798e;
+  font-size: 40px;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mobile-link {
+  padding: 4%;
+  color: inherit;
+  color: #3a4a42;
+  text-decoration: none;
+}
+
+/* finish hamburguer menu */
 header {
   display: flex;
   flex-wrap: wrap;
