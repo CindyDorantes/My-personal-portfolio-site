@@ -90,6 +90,10 @@ ul {
   top: 6px;
 }
 
+.hamburguer.active {
+  border: 2px solid palevioletred;
+}
+
 .works {
   display: grid;
   grid-template-rows: repeat(6, auto);
