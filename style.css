@@ -721,3 +721,81 @@ button:active {
     display: none;
   }
 }
+
+/* -------CSS FOR POPUP MOBILE    */
+
+.popup-mb {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 5%;
+  transition: 200ms ease-in-out;
+  transform: scale(0);
+  z-index: 10;
+}
+
+.popup-mb.active {
+  transform: scale(1);
+}
+
+.img-pop {
+  cursor: pointer;
+}
+
+.title-pop {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+}
+
+.cards-pop {
+  gap: 8px;
+  width: 305px;
+  height: 32px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.cards-pop li {
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #3a4a42;
+  padding: 8px 12px 8px 12px;
+}
+
+.p-pop {
+  color: #344563;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.see-project1 {
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #36b37f;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  width: auto;    
+}

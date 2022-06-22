@@ -100,3 +100,70 @@ for (let i = 0; i < projects.length; i++) {
   seeProject.textContent = projects[i].buttonName;
   div03.appendChild(seeProject);
 };
+
+// create the popup window for the mobile version //
+
+const mobilePopup = document.createElement('div');
+mobilePopup.classList.add("popup-mb");
+sectionWorks.appendChild(mobilePopup);
+
+const closingPop = document.createElement('span');
+closingPop.classList.add("img-pop");
+mobilePopup.appendChild(closingPop);
+
+const popImg = document.createElement('img');
+popImg.src = "./Images/popup.png";
+popImg.alt = "blue futurist image";
+closingPop.appendChild(popImg);
+
+const titlePop = document.createElement('h3');
+titlePop.classList.add("title-pop");
+titlePop.textContent = "Keeping track of hundreds of components";
+mobilePopup.appendChild(titlePop);
+
+const popupList = document.createElement('ul');
+popupList.classList.add("cards-pop");
+mobilePopup.appendChild(popupList);
+
+const liPop = document.createElement('li');
+liPop.textContent = "Ruby on rail"
+popupList.appendChild(liPop);
+
+const liPop = document.createElement('li');
+liPop.textContent = "css"
+popupList.appendChild(liPop);
+
+const liPop = document.createElement('li');
+liPop.textContent = "JavScript"
+popupList.appendChild(liPop);
+
+const textPop = document.createElement('p');
+textPop.classList.add("p-pop");
+textPop.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+mobilePopup.appendChild(textPop);
+
+const accesPop = document.createElement('div');
+accesPop.classList.add("bt-pop");
+mobilePopup.appendChild(accesPop);
+
+const buttonPop1 = document.createElement('button');
+buttonPop1.classList.add("see-project1");
+buttonPop1.textContent ="See live ";
+buttonPop1.innerHTML = '<i class="fa-solid fa-arrow-up-right-from-square"></i>';
+accesPop.appendChild(buttonPop1);
+
+const buttonPop2 = document.createElement('button');
+buttonPop1.classList.add("see-project1");
+buttonPop1.textContent ="See source ";
+buttonPop1.innerHTML = '<i class="fa-brands fa-github">';
+accesPop.appendChild(buttonPop1);
+
+
+
+
+
+
+
+
+
+
