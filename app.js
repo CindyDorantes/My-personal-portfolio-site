@@ -20,10 +20,13 @@ closingItem.addEventListener('click', () => {
 const sectionWorks = document.querySelector('.works');
 
 // create the popup window for the mobile version //
+const wrapPopup = document.createElement('div');
+wrapPopup.classList.add('wrap-pop');
+sectionWorks.appendChild(wrapPopup);
 
 const mobilePopup = document.createElement('div');
 mobilePopup.classList.add('popup-mb');
-sectionWorks.appendChild(mobilePopup);
+wrapPopup.appendChild(mobilePopup);
 
 const closingPop = document.createElement('span');
 closingPop.classList.add('img-pop');
@@ -66,14 +69,12 @@ mobilePopup.appendChild(accesPop);
 
 const buttonPop1 = document.createElement('button');
 buttonPop1.classList.add('see-project1');
-buttonPop1.textContent = 'See live ';
-buttonPop1.innerHTML = '<i class="fa-solid fa-arrow-up-right-from-square"></i>';
+buttonPop1.innerHTML = 'See live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
 accesPop.appendChild(buttonPop1);
 
 const buttonPop2 = document.createElement('button');
 buttonPop2.classList.add('see-project1');
-buttonPop2.textContent = 'See source ';
-buttonPop2.innerHTML = '<i class="fa-brands fa-github">';
+buttonPop2.innerHTML = 'See source <i class="fa-brands fa-github">';
 accesPop.appendChild(buttonPop2);
 
 // HERE BEGINS THE WORK CARDS //
@@ -117,8 +118,6 @@ const projects = [
 ];
 
 // ----- HERE IS THE LOOP TO CREATE ALL CARDS -------- //
-const buttonList = [];
-
 
 for (let i = 0; i < projects.length; i += 1) {
   // create the div that contains the card//
@@ -156,14 +155,12 @@ for (let i = 0; i < projects.length; i += 1) {
   div03.appendChild(seeProject);
 
   seeProject.addEventListener('click', () => {
-    mobilePopup.classList.add('active');
+    wrapPopup.classList.add('active');
   });
-  
 }
 
 // Create event for opening Popup Window in mobile version //
 
-
 closingPop.addEventListener('click', () => {
-  mobilePopup.classList.remove('active');
+  wrapPopup.classList.remove('active');
 });
