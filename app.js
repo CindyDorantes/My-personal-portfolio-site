@@ -21,7 +21,48 @@ closingItem.addEventListener('click', () => {
 
 // ----- FIRST WORK CARD -------- //
 
+
+
 // here we are assigning the parent container to a variable //
+
+const projects = [
+  {
+    title: 'Multi-post stories gain + glory',
+    languages: ['Ruby on rails ', 'css', 'javscript', 'html' ],
+    buttonName: 'see project',
+  },
+
+  {
+    title: 'Multi-post stories gain + glory',
+    languages: ['Ruby on rails ', 'css', 'javscript', 'html' ],
+    buttonName: 'see project',
+  },
+
+  {
+    title: 'Multi-post stories gain + glory',
+    languages: ['Ruby on rails ', 'css', 'javscript', 'html' ],
+    buttonName: 'see project',
+  },
+
+  {
+    title: 'Multi-post stories gain + glory',
+    languages: ['Ruby on rails ', 'css', 'javscript', 'html' ],
+    buttonName: 'see project',
+  },
+
+  {
+    title: 'Multi-post stories gain + glory',
+    languages: ['Ruby on rails ', 'css', 'javscript', 'html' ],
+    buttonName: 'see project',
+  },
+
+  {
+    title: 'Multi-post stories gain + glory',
+    languages: ['Ruby on rails ', 'css', 'javscript', 'html' ],
+    buttonName: 'see project',
+  }
+];
+
 const sectionWorks = document.querySelector(".works");
 
 const div01 = document.createElement('div');
