@@ -32,16 +32,39 @@ const closingPop = document.createElement('span');
 closingPop.classList.add('img-pop');
 mobilePopup.appendChild(closingPop);
 
+// image header for POPUP //
 const popImg = document.createElement('img');
 popImg.src = './Images/popup.png';
 popImg.alt = 'blue futurist image';
 closingPop.appendChild(popImg);
 
+// header container for POPUP //
+
+const deskContainer = document.createElement('div');
+deskContainer.classList.add('desk-container');
+mobilePopup.appendChild(deskContainer);
+
 const titlePop = document.createElement('h3');
 titlePop.classList.add('title-pop');
 titlePop.textContent = 'Keeping track of hundreds of components';
-mobilePopup.appendChild(titlePop);
+deskContainer.appendChild(titlePop);
 
+// button container for POPUP desktop display //
+const accesPop1 = document.createElement('div');
+accesPop1.classList.add('bt-pop-desk');
+deskContainer.appendChild(accesPop1);
+
+const buttonPop3 = document.createElement('button');
+buttonPop3.classList.add('see-project1');
+buttonPop3.innerHTML = 'See live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
+accesPop1.appendChild(buttonPop3);
+
+const buttonPop4 = document.createElement('button');
+buttonPop4.classList.add('see-project1');
+buttonPop4.innerHTML = 'See source <i class="fa-brands fa-github">';
+accesPop1.appendChild(buttonPop4);
+
+// languages cards POPUP //
 const popupList = document.createElement('ul');
 popupList.classList.add('cards-pop');
 mobilePopup.appendChild(popupList);
@@ -58,6 +81,7 @@ const liPop3 = document.createElement('li');
 liPop3.textContent = 'JavScript';
 popupList.appendChild(liPop3);
 
+// POPUP description //
 const textPop = document.createElement('p');
 textPop.classList.add('p-pop');
 textPop.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
