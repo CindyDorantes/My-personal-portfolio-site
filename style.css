@@ -729,8 +729,8 @@ button:active {
   display: none;
   transition: 500ms ease-in-out;
   padding: 2%;
-  height: 95vh;       
-  border: 1px solid #ddd;     
+  height: 95vh;
+  border: 1px solid #ddd;
   overflow-y: scroll;
 }
 
@@ -746,7 +746,6 @@ button:active {
 }
 
 .popup-mb {
-  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -761,7 +760,7 @@ button:active {
 }
 
 .img-pop {
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .title-pop {
@@ -827,7 +826,6 @@ button:active {
 /* media query for POPUP desktop version */
 
 @media only screen and (min-width: 768px) {
-
   .popup-mb {
     width: 920px;
     max-width: 60%;
@@ -836,11 +834,7 @@ button:active {
 
   .desk-container {
     display: flex;
-    margin: 2% 0%;    
-  }
-
-  .img-pop {
-    
+    margin: 2% 0%;
   }
 
   .img-pop img {
