@@ -204,3 +204,20 @@ popImg.addEventListener('click', () => {
 closeCross.addEventListener('click', () => {
   wrapPopup.classList.remove('active');
 });
+
+// FORM VALIDATION //
+
+const email = document.getElementById('input-email');
+const form = document.getElementsByTagName('form')[0];
+const errorMsg = document.querySelector('.error-msg');
+
+form.addEventListener('submit', (event) => {
+  const emailAddress = email.value;
+  if (emailAddress.toLowerCase() !== emailAddress) {
+    errorMsg.innerHTML = 'E-mail address must be lowercase. The form will not be sent <i class="fa-solid fa-triangle-exclamation"></i>';
+    errorMsg.classList.add('active');
+    event.preventDefault();
+  } else {
+    errorMsg.classList.remove('active');
+  }
+});
