@@ -28,12 +28,24 @@ const mobilePopup = document.createElement('div');
 mobilePopup.classList.add('popup-mb');
 wrapPopup.appendChild(mobilePopup);
 
-const closingPop = document.createElement('span');
+const closingPop = document.createElement('div');
 closingPop.classList.add('img-pop');
 mobilePopup.appendChild(closingPop);
 
-// image header for POPUP //
+const closeCross = document.createElement('button');
+closeCross.classList.add('close-cross');
+closeCross.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+closingPop.appendChild(closeCross);
+
+const popImgDesk = document.createElement('img');
+popImgDesk.classList.add('pop-img-desk');
+popImgDesk.src = './Images/popup-desk.png';
+popImgDesk.alt = 'blue futurist image';
+closingPop.appendChild(popImgDesk);
+
+// image header for POPUP mobile//
 const popImg = document.createElement('img');
+popImg.classList.add('pop-img-mb');
 popImg.src = './Images/popup.png';
 popImg.alt = 'blue futurist image';
 closingPop.appendChild(popImg);
@@ -185,6 +197,10 @@ for (let i = 0; i < projects.length; i += 1) {
 
 // Create event for opening Popup Window in mobile version //
 
-closingPop.addEventListener('click', () => {
+popImg.addEventListener('click', () => {
+  wrapPopup.classList.remove('active');
+});
+
+closeCross.addEventListener('click', () => {
   wrapPopup.classList.remove('active');
 });

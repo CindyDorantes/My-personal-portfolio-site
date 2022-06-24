@@ -756,10 +756,17 @@ button:active {
   margin: 2%;
   transition: 200ms ease-in-out;
   overflow-y: scroll;
-  overflow: hidden;
 }
 
-.img-pop {
+.close-cross {
+  display: none;
+}
+
+.pop-img-desk {
+  display: none;
+}
+
+.pop-img-mb {
   cursor: pointer;
 }
 
@@ -832,13 +839,37 @@ button:active {
     padding: 2%;
   }
 
+  .img-pop {
+    text-align: end;
+  }
+
+  .close-cross {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 25px;
+    color: #67798e;
+    background: #ebecf0;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .pop-img-desk {
+    display: block;
+    margin-top: 14px;
+    width: 100%;
+  }
+
+  .pop-img-mb {
+    display: none;
+  }
+
   .desk-container {
     display: flex;
     margin: 2% 0%;
-  }
-
-  .img-pop img {
-    width: 80%;
   }
 
   .title-pop {
