@@ -221,3 +221,27 @@ form.addEventListener('submit', (event) => {
     errorMsg.classList.remove('active');
   }
 });
+
+// PRESERVE FORM DATA IN LOCAL STORAGE //
+
+const person = document.getElementById('input-name');
+const comments = document.getElementById('input-comment');
+
+let userInput;
+
+// set data in storage //
+form.addEventListener('input', () => {
+  const userName = person.value;
+  const userEmail = email.value;
+  const userComments = comments.value;
+  userInput = { userName, userEmail, userComments };
+  localStorage.setItem("userData", JSON.stringify(userInput));
+});
+
+// retrieve data from storage //
+if (localStorage.getItem("userData")) {
+  userInput = JSON.parse(localStorage.getItem("userData"));
+  person.value = userInput.userName;
+  email.value = userInput.userEmail;
+  comments.value = userInput.userComments;
+}
