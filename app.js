@@ -234,9 +234,14 @@ form.addEventListener('input', () => {
   const userName = person.value;
   const userEmail = email.value;
   const userComments = comments.value;
-  userInput = {userName, userEmail, userComments};
-  localStorage.setItem(JSON.stringify(userInput));
+  userInput = { userName, userEmail, userComments };
+  localStorage.setItem("userData", JSON.stringify(userInput));
 });
 
 // retrieve data from storage //
-
+if (localStorage.getItem("userData")) {
+  userInput = JSON.parse(localStorage.getItem("userData"));
+  person.value = userInput.userName;
+  email.value = userInput.userEmail;
+  comments.value = userInput.userComments;
+}
