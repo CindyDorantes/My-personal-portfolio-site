@@ -38,15 +38,15 @@ closeCross.innerHTML = '<i class="fa-solid fa-xmark"></i>';
 closingPop.appendChild(closeCross);
 
 const popImgDesk = document.createElement('img');
-popImgDesk.classList.add('pop-img-desk');
-popImgDesk.src = './Images/popup-desk.png';
+popImgDesk.classList.add('pop-img-desk', 'projectImg');
+popImgDesk.src = './SS/index-program-desktop.png';
 popImgDesk.alt = 'blue futurist image';
 closingPop.appendChild(popImgDesk);
 
 // image header for POPUP mobile//
 const popImg = document.createElement('img');
-popImg.classList.add('pop-img-mb');
-popImg.src = './Images/popup.png';
+popImg.classList.add('pop-img-mb', 'projectImg');
+popImg.src = './SS/index-program-desktop.png';
 popImg.alt = 'blue futurist image';
 closingPop.appendChild(popImg);
 
@@ -58,7 +58,7 @@ mobilePopup.appendChild(deskContainer);
 
 const titlePop = document.createElement('h3');
 titlePop.classList.add('title-pop');
-titlePop.textContent = 'Keeping track of hundreds of components';
+titlePop.textContent = 'FOOD INDUSTRY GLOBAL SUMMIT 2022';
 deskContainer.appendChild(titlePop);
 
 // button container for POPUP desktop display //
@@ -82,21 +82,21 @@ popupList.classList.add('cards-pop');
 mobilePopup.appendChild(popupList);
 
 const liPop1 = document.createElement('li');
-liPop1.textContent = 'Ruby on rail';
+liPop1.textContent = 'HTML';
 popupList.appendChild(liPop1);
 
 const liPop2 = document.createElement('li');
-liPop2.textContent = 'css';
+liPop2.textContent = 'CSS';
 popupList.appendChild(liPop2);
 
 const liPop3 = document.createElement('li');
-liPop3.textContent = 'JavScript';
+liPop3.textContent = 'JavaScript';
 popupList.appendChild(liPop3);
 
 // POPUP description //
 const textPop = document.createElement('p');
 textPop.classList.add('p-pop');
-textPop.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+textPop.textContent = "This project is based on an online website for a conference. The main objective is demonstrate ability to create UIs adaptable to different screen sizes using media queries. ";
 mobilePopup.appendChild(textPop);
 
 const accesPop = document.createElement('div');
@@ -105,51 +105,67 @@ mobilePopup.appendChild(accesPop);
 
 const buttonPop1 = document.createElement('button');
 buttonPop1.classList.add('see-project1');
-buttonPop1.innerHTML = 'See live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
+//buttonPop1.innerHTML = 'See live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
 accesPop.appendChild(buttonPop1);
+
+const linkLive = document.createElement('a');
+linkLive.href = 'https://cindydorantes.github.io/Capstone-project-Conference-page/index.html';
+linkLive.innerHTML = 'See live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
+buttonPop1.appendChild(linkLive);
 
 const buttonPop2 = document.createElement('button');
 buttonPop2.classList.add('see-project1');
-buttonPop2.innerHTML = 'See source <i class="fa-brands fa-github">';
+//buttonPop2.innerHTML = 'See source <i class="fa-brands fa-github">';
 accesPop.appendChild(buttonPop2);
+
+const linkSource = document.createElement('a');
+linkSource.href = 'https://github.com/CindyDorantes/Capstone-project-Conference-page';
+linkSource.innerHTML = 'See source <i class="fa-brands fa-github">';
+buttonPop2.appendChild(linkSource);
 
 // HERE BEGINS THE WORK CARDS //
 
 const projects = [
   {
-    title: 'Multi-post stories gain + glory',
-    languages: ['Ruby on rails ', 'css', 'javscript', 'html'],
-    buttonName: 'see project',
+    title: 'Conference Page',
+    languages: ['CSS', 'JavaScript', 'HTML'],
+    buttonName: 'See Project',
+    imageSrc: './SS/index-intro-desktop.png',
   },
 
   {
     title: 'Multi-post stories gain + glory',
     languages: ['Ruby on rails ', 'css', 'javscript', 'html'],
     buttonName: 'see project',
+    imageSrc: '',
   },
 
   {
     title: 'Multi-post stories gain + glory',
     languages: ['Ruby on rails ', 'css', 'javscript', 'html'],
     buttonName: 'see project',
+    imageSrc: '',
   },
 
   {
     title: 'Multi-post stories gain + glory',
     languages: ['Ruby on rails ', 'css', 'javscript', 'html'],
     buttonName: 'see project',
+    imageSrc: '',
   },
 
   {
     title: 'Multi-post stories gain + glory',
     languages: ['Ruby on rails ', 'css', 'javscript', 'html'],
     buttonName: 'see project',
+    imageSrc: '',
   },
 
   {
     title: 'Multi-post stories gain + glory',
     languages: ['Ruby on rails ', 'css', 'javscript', 'html'],
     buttonName: 'see project',
+    imageSrc: '',
   },
 ];
 
@@ -164,6 +180,10 @@ for (let i = 0; i < projects.length; i += 1) {
   const div02 = document.createElement('div');
   div02.classList.add('work-image');
   div01.appendChild(div02);
+  const pImage = document.createElement('img');
+  pImage.classList.add('projectImg')
+  pImage.src = projects[i].imageSrc;
+  div02.appendChild(pImage);
   // create the div that contains the project information//
   const div03 = document.createElement('div');
   div03.classList.add('work-content');
