@@ -4,6 +4,10 @@ My personal portfolio site
 
 > This is the way I have to show you what I'm truly capable of as a developer.
 
+## Live Demo
+
+[Live Demo Link](https://cindydorantes.github.io/My-personal-portfolio-site/)
+
 ## Built With
 
 - HTML
@@ -11,9 +15,17 @@ My personal portfolio site
 - JAVASCRIPT
 
 
-## Getting Started
+## GETTING STARTED
 
-To get a local copy up and running follow these simple example steps.
+Clone this repo : https://github.com/CindyDorantes/My-personal-portfolio-site.git
+
+After cloning this project, run the following commands:
+
+```markdown
+npm install
+```
+
+The `npm install` command installs all dependencies used in the project
 
 ## Authors
 
